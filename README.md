@@ -1,6 +1,6 @@
 # 📚 Book Review App
 
-A modern **MERN Stack** application that allows users to browse books, add comments, update their profile image, and manage their account with a clean and responsive UI.
+A modern **MERN Stack** application that allows users add comments 'reviews', update their profile image, and manage their account with a clean and responsive UI.
 
 ---
 
