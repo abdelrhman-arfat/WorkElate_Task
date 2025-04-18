@@ -12,7 +12,7 @@ A modern **MERN Stack** application that allows users add comments 'reviews', up
 - 🧑‍💻 Profile Management (Update Name, Profile Picture, Password)
 - 🎨 Modern UI using **TailwindCSS**
 - 📦 Toast notifications using **react-hot-toast**
-- 🌐 Axios for API requests
+- 🌐 RTK Qeury and Axios for API requests
 
 ---
 
@@ -22,7 +22,7 @@ A modern **MERN Stack** application that allows users add comments 'reviews', up
 |--------------------|--------------------|----------------------|
 | React + TypeScript | Node.js + Express  | TailwindCSS          |
 | React Icons        | MongoDB (Mongoose) | Axios, Toast, JWT    |
-| React Router       | RESTful API        | Redux (if needed)    |
+| React Router       | RESTful API        | Redux tookit ,query   |
 
 ---
 
