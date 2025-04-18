@@ -1,7 +1,7 @@
 {
   "name": "backend",
   "version": "1.0.0",
-  "description": "learning node js , express.js , mongodb ,",
+  "description": "WorkElate coding task ,",
   "main": "dist/index.js",
   "scripts": {
     "build": "rimraf dist && tsc",
