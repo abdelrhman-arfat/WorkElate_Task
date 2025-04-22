@@ -55,13 +55,13 @@ const signup = async (req: Request, res: Response) => {
       httpOnly: true,
       secure: true,
       maxAge: 7 * 24 * 60 * 60 * 1000, // 7 days
-      sameSite: "lax",
+      sameSite: "none",
     });
     res.cookie("token", token, {
       httpOnly: true,
       secure: true,
       maxAge: 20 * 60 * 1000, // 20 minutes
-      sameSite: "lax",
+      sameSite: "none",
     });
     res.status(201).json({
       success: true,
@@ -148,13 +148,13 @@ const login = async (req: Request, res: Response) => {
       httpOnly: true,
       secure: true,
       maxAge: 7 * 24 * 60 * 60 * 1000, // 7 days
-      sameSite: "lax",
+      sameSite: "none",
     });
     res.cookie("token", token, {
       httpOnly: true,
       secure: true,
       maxAge: 20 * 60 * 1000, // 20 minutes
-      sameSite: "lax",
+      sameSite: "none",
     });
     res.status(200).json({
       success: true,
@@ -181,13 +181,13 @@ const logout = async (req: Request, res: Response) => {
     res.clearCookie("refreshToken", {
       httpOnly: true,
       secure: true,
-      sameSite: "lax",
+      sameSite: "none",
       maxAge: 0,
     });
     res.clearCookie("token", {
       httpOnly: true,
       secure: true,
-      sameSite: "lax",
+      sameSite: "none",
       maxAge: 0,
     });
     res.status(200).json({
@@ -252,13 +252,13 @@ const refreshToken = async (req: Request, res: Response) => {
       httpOnly: true,
       secure: true,
       maxAge: 7 * 24 * 60 * 60 * 1000, // 7 days
-      sameSite: "lax",
+      sameSite: "none",
     });
     res.cookie("token", token, {
       httpOnly: true,
       secure: true,
       maxAge: 20 * 60 * 1000, // 20 minutes
-      sameSite: "lax",
+      sameSite: "none",
     });
     res.status(200).json({
       success: true,
