@@ -44,13 +44,13 @@ export const checkToken = async (
       res.clearCookie("token", {
         httpOnly: true,
         secure: true,
-        sameSite: "lax",
+        sameSite: "none",
         maxAge: 0,
       });
       res.clearCookie("refreshToken", {
         httpOnly: true,
         secure: true,
-        sameSite: "lax",
+        sameSite: "none",
         maxAge: 0,
       });
 
