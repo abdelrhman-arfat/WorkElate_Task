@@ -124,15 +124,15 @@ const updateUser = async (req: Request, res: Response) => {
     }
     res.cookie("refreshToken", refreshToken, {
       httpOnly: true,
-      secure: NODE_ENV !== "development",
+      secure: true,
       maxAge: 7 * 24 * 60 * 60 * 1000, // 7 days
-      sameSite: "lax",
+      sameSite: "none",
     });
     res.cookie("token", token, {
       httpOnly: true,
-      secure: NODE_ENV !== "development",
+      secure: true,
       maxAge: 20 * 60 * 1000, // 20 minutes
-      sameSite: "lax",
+      sameSite: "none",
     });
 
     res.status(200).json({
